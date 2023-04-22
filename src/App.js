@@ -20,6 +20,7 @@ function App() {
     <CampusSection/>
     <PopularCourses/>
     <CountSection/>
+    <UpComingEvents/>
     <Footer/>
     </div>
   );

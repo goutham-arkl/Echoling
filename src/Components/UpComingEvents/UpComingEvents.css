@@ -1,0 +1,54 @@
+.events-container{
+    height: 700px;
+    background-color:#f5f5f5 ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.slide-card{
+    width: 304px;
+    height: 371px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+   padding: 0px 10px;
+    justify-content: space-evenly;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.date h1{
+    color: #d2093c;
+    font-size: 50px;
+}
+.date span{
+  font-size: 16px;
+  color: #777;
+}
+.event-time-name p{
+    color: #d2093c;
+    font-weight: lighter;
+}
+.event-time-name span{
+    font-size: 20px;
+}
+.place{
+    font-size: 16px;
+}
+.find-btn{
+    width: 243px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    background-color: white;
+    transition-duration: 1s;
+}
+.find-btn:hover{
+    background-color: #d2093c;
+    color: white;
+}
+.card-carousel{
+    width: 60%;
+
+}
