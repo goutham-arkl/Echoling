@@ -1,0 +1,77 @@
+.nav-container{
+  width: 100%;
+
+}
+.contact-nav{
+    width: 100%;
+    height: 40px ;
+    background-color: #00306E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.phone-email{
+    
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+}
+ul{
+    display: flex;
+    gap: 19px;
+    list-style: none;
+    
+    
+}
+.social{
+    gap: 4px;
+    display: flex;
+    color: aliceblue;
+
+}
+.nav-options{
+    display: flex;
+    flex-wrap: wrap;
+	  list-style: none;
+	  margin: 0;
+	  padding-left: 0;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.nav-options li{
+    
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+}
+.nav-options li .dropdown{
+	display: none;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+	left: 0;
+ 
+}
+.nav-options li:hover >.dropdown,.nav-options li .dropdown:hover{
+    background-color:white;
+    width: 190px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+   transition-duration: 3s;
+
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+
+
