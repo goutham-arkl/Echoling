@@ -1,11 +1,15 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import facebook from '../../images/NavIcons/facebook.png'
-import React from 'react'
+import React,{useState} from 'react'
+
+
 
 import logo from '../../images/logo.png'
 import './Navbar.css'
 const Navbar = () => {
+
+
   return (
     <div className='nav-container'>
        <div className='contact-nav'>
@@ -31,7 +35,7 @@ const Navbar = () => {
 
 
 
-       <div className='navbar'>
+       <div className='navbar' >
 
        <div className='logo'>
         <img src={logo}/>

@@ -8,11 +8,13 @@ import PopularCourses from './Components/PopularCourses/PopularCourses';
 import CountSection from './Components/CountSection/CountSection';
 import UpComingEvents from './Components/UpComingEvents/UpComingEvents';
 import Footer from './Components/Footer/Footer';
+import Carousel from './Components/Carousel/Carousel';
 
 function App() {
   return (
     <div className="App">
     <Navbar/>
+    <Carousel/>
     <Section1/>
     <Section2/>
     <CampusSection/>
