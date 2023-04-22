@@ -9,6 +9,7 @@ import CountSection from './Components/CountSection/CountSection';
 import UpComingEvents from './Components/UpComingEvents/UpComingEvents';
 import Footer from './Components/Footer/Footer';
 import Carousel from './Components/Carousel/Carousel';
+import News from './Components/newsandBlogs/News';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <PopularCourses/>
     <CountSection/>
     <UpComingEvents/>
+    <News/>
     <Footer/>
     </div>
   );

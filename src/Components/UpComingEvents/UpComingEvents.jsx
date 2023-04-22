@@ -191,7 +191,7 @@ const UpComingEvents = () => {
      
      </div>
     
-   </Carousel>;
+   </Carousel>
      </div>
 
     
