@@ -10,6 +10,7 @@ import UpComingEvents from './Components/UpComingEvents/UpComingEvents';
 import Footer from './Components/Footer/Footer';
 import Carousel from './Components/Carousel/Carousel';
 import News from './Components/newsandBlogs/News';
+import Reviews from './Components/StudentReviews/Reviews';
 
 function App() {
   return (

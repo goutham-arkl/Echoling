@@ -37,7 +37,7 @@ const UpComingEvents = () => {
      </div>
      <div className='card-carousel'>
      <Carousel
-      dotListClass='custom-dot-list-style'   arrows={false}  showDots={true} responsive={responsive}>
+      dotListClass='custom-dot-list-style'   arrows={false}   responsive={responsive}>
      <div className='slide-card'>
        <div className='date'>
        <h1>14</h1>

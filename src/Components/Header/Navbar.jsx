@@ -9,6 +9,15 @@ import logo from '../../images/logo.png'
 import './Navbar.css'
 const Navbar = () => {
 
+  window.addEventListener('scroll', () => {
+    var nav = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+      nav.style.top = '0';
+    } else {
+      nav.style.top = '';
+    }
+  });
+
 
   return (
     <div className='nav-container'>
@@ -40,13 +49,14 @@ const Navbar = () => {
        <div className='logo'>
         <img src={logo}/>
        </div>
-       <div className='dropdown'>
+
+       <div className='main-dropdown'>
 
 
        <ul className='nav-options'>
 
        <li style={{color:'#D2093C'}}>Home
-       <ul class="dropdown">
+       <ul className="sub-dropdown">
        <li>Home1</li>
        <li>Home2</li>
        <li>Home3</li>
@@ -54,7 +64,7 @@ const Navbar = () => {
      </ul>
        </li>
        <li> Pages
-         <ul class="dropdown">
+         <ul className="sub-dropdown">
          <li>About</li>
          <li>Instructor</li>
          <li>Profile</li>
@@ -64,7 +74,7 @@ const Navbar = () => {
          </ul>
        </li>
        <li> Course
-       <ul class="dropdown">
+       <ul className="sub-dropdown">
        <li>Course</li>
        <li>Right SideBar</li>
        <li>Course List</li>
@@ -76,14 +86,14 @@ const Navbar = () => {
      </ul>
        </li>
        <li> Blog
-       <ul class="dropdown">
+       <ul className="sub-dropdown">
        <li>Blog</li>
        <li>Blog Single</li>
      </ul>
        </li>
        <li>Contact</li>
      </ul>
-       </div>
+    </div>
        
           
        </div>
