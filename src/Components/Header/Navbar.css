@@ -28,7 +28,9 @@ ul{
     
 }
 .social{
-    gap: 4px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
     display: flex;
     color: aliceblue;
 
@@ -74,8 +76,17 @@ ul{
     justify-content: space-around;
     z-index: 2;
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.nav-options li span{
+  position: absolute;
+  top: 11px;
+  right:6px;
 }
 
-
-
+.social img{
+    width: 25px;
+    height: 25px;
+    image-rendering: optimizeQuality;
+}
 

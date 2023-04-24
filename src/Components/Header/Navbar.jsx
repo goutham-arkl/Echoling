@@ -1,6 +1,10 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import facebook from '../../images/NavIcons/facebook.png'
+import twitter from '../../images/NavIcons/twitter.png'
+import linkedin from '../../images/NavIcons/linkedin.png'
+
+
 import React,{useState} from 'react'
 
 
@@ -37,7 +41,11 @@ const Navbar = () => {
             
           </div>
           <div className='social'>
-          <img style={{backgroundColor:'white', borderRadius:'50%'}} src={facebook}/>
+          <img src={facebook}/>
+          <img src={twitter}/>
+          <img src={linkedin}/>
+
+          
            
           </div>
        </div>
@@ -55,7 +63,7 @@ const Navbar = () => {
 
        <ul className='nav-options'>
 
-       <li style={{color:'#D2093C'}}>Home
+       <li style={{color:'#D2093C' }}>Home 
        <ul className="sub-dropdown">
        <li>Home1</li>
        <li>Home2</li>

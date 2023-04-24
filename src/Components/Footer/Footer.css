@@ -81,6 +81,7 @@ ol > li{
 }
 .social-links{
     display: flex;
+
     list-style: none;
     gap: 10px;
 }
@@ -88,6 +89,15 @@ ol > li{
 .social-links > ul >li>button{
     border-radius: 50%;
     background-color: transparent;
-    border: none;
+    border: 1px solid #777;
+    overflow: hidden;
+
+
+}
+.social-links > ul >li  img{
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    object-fit: cover;
 
 }

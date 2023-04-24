@@ -1,55 +1,53 @@
-import React from 'react'
+import React,{useState} from 'react'
 import line from '../../images/line.png'
 import './Reviews.css'
+import photo from '../../images/review/1.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGreaterThan, faLessThan } from '@fortawesome/free-solid-svg-icons'
 const Reviews = () => {
-    let box =document.querySelector('.review-carousel')
+    const review = [
+        {
+            id:1
+        }
+      ];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const handlenext=()=>{
-        let width =box.clientWidth;
-        box.scrollLeft  = box.scrollLeft + width
-        console.log(width)
-    }
-    const handleprev=()=>{
-        let width =box.clientWidth;
-        box.scrollLeft = box.scrollLeft - width
+  const handlePrevious = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? review.length - 1 : prevIndex - 1
+    );
+  };
 
-    }
+  const handleNext = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === review.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+
 
   return (
-    <div className='reviws-container'>
-        <div style={{padding:'20px'}} className='heading'>
-            <h2 style={{marginLeft:'23px'}}>What our student saying</h2>
-            <img src={line}/>
-        </div>
-        <div className='review-carousel'>
-           <button onClick={handleprev} className='pre-btn'><p>&lt;</p></button>
-           
-           <div className='review-card'>
-           
-           1
-           
-           </div>
-           <div className='review-card'>
-           2
-           
-           
-           </div>
-           <div className='review-card'>3</div>
-           <div className='review-card'>4</div>
-           <div className='review-card'>5</div>
-           <div className='review-card'>6</div>
-           <div className='review-card'>7</div>
-           <div className='review-card'>9</div>
-           <div className='review-card'></div>
-           <div className='review-card'></div>
-
-           <div className='review-card'>8</div>
-           <button onClick={handlenext} className='next-btn'><p>&gt;</p></button>
-
-        </div>
-        
-
-
+    <div className='reviews-container'>
+    <div style={{padding:'20px'}} className='heading'>
+    <h2 style={{marginLeft:'23px'}}>What our student saying</h2>
+    <img src={line}/>
+    </div>
+    <div className="review-slider">
+    <button onClick={handlePrevious}><FontAwesomeIcon icon={faLessThan}/></button>
+    <div className='content-div'>
+      <div className='review-img'>
+        <img src={photo}/>
+      </div>
+      <div className='review-content'>
+        <span className='name'>Justin Case</span>
+        <em className='student'>Student</em>
+        <p className='opinion'>Nulla porttitor accumsan tincidunt. vamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+        <span className='rating'>4.9 (14 Reviews)</span>
+      
+      </div>
+    </div>
+    <button onClick={handleNext}><FontAwesomeIcon icon={faGreaterThan}/></button>
+    </div>
     </div>
   )
 }

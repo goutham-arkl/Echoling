@@ -117,6 +117,7 @@
     line-height: 86px;
     text-align: center;
     width: 90px;
+    cursor: pointer;
     position: relative;
 
   }
@@ -130,6 +131,7 @@
     height: 90px;
     animation: aura 3.5s linear infinite;
   }
+
 
   @keyframes aura {
 

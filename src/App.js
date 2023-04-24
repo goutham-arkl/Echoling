@@ -23,6 +23,7 @@ function App() {
     <PopularCourses/>
     <CountSection/>
     <UpComingEvents/>
+    <Reviews/>
     <News/>
     <Footer/>
     </div>

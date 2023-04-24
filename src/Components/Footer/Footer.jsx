@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../../images/white-logo.png'
-import facebook from '../../images/footer/1.svg'
-import twitter from '../../images/footer/twitter.svg'
-import linkedin from '../../images/footer/linkedin.svg'
+import facebook from '../../images/footer/facebook.png'
+import twitter from '../../images/footer/twitter.png'
+import linkedin from '../../images/footer/linkedin.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Footer.css'
@@ -71,13 +71,13 @@ const Footer = () => {
 
 
         <div className='footer-copyright'>
-        <div className='copyright'>@2022 <span style={{color:'#d2093c'}}>Echooling</span> All Rights Reserved</div>
+        <div className='copyright'>© 2022 <span style={{color:'#d2093c'}}>Echooling</span> All Rights Reserved</div>
         <div className='social-links'>
          <ul>
         <li>Follow us</li>
-        <li><button><img style={{color:'white'}} src={facebook}/></button></li>
-        <li><button><img style={{color:'white'}} src={twitter}/></button></li>
-        <li><button><img style={{color:'white'}} src={linkedin}/></button></li>
+        <li><button><img  src={facebook}/></button></li>
+        <li><button><img  src={twitter}/></button></li>
+        <li><button><img  src={linkedin}/></button></li>
         </ul> 
         </div>
         
