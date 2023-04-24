@@ -57,5 +57,18 @@
     padding-left: 10px;
     font-family:  'Source Sans Pro';;
 }
-
+.scroll-top{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    padding: 7px;
+    border-radius: 3px;
+    top: 90vh;
+    right: 20px;
+    background-color: #d2093c;
+    font-size: 25px;
+}
 

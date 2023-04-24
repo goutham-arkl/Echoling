@@ -1,3 +1,4 @@
+import React,{useState,useEffect} from 'react'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import facebook from '../../images/NavIcons/facebook.png'
@@ -5,7 +6,6 @@ import twitter from '../../images/NavIcons/twitter.png'
 import linkedin from '../../images/NavIcons/linkedin.png'
 
 
-import React,{useState} from 'react'
 
 
 
@@ -13,14 +13,23 @@ import logo from '../../images/logo.png'
 import './Navbar.css'
 const Navbar = () => {
 
-  window.addEventListener('scroll', () => {
-    var nav = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-      nav.style.top = '0';
-    } else {
-      nav.style.top = '';
-    }
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      var nav = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        nav.style.top = '0';
+      } else {
+        nav.style.top = '';
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [window.scrollY]);
+  
 
 
   return (

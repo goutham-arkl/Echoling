@@ -1,10 +1,30 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Section1.css'
 import line from '../../images/line.png'
 import { cards } from '../../Helpers/academyCardData'
 const Section1 = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const button = document.querySelector('.scroll-top');
+      if (window.scrollY < window.innerHeight/3) {
+        button.style.display = 'none';
+      } else {
+        button.style.display = 'block';
+      }
+    };
+  
+    handleScroll();
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+    
+  }, [window.scrollY])
   return (
     <div className='container'>
+    <a className='scroll-top' href='#top'>^</a>
       <div className='heading'>
         <h2>Academics</h2>
         <img src={line}/>

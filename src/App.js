@@ -1,4 +1,3 @@
-
 import './App.css';
 import Section1 from './Components/Section1/Section1';
 import Navbar from './Components/Header/Navbar';
@@ -11,11 +10,10 @@ import Footer from './Components/Footer/Footer';
 import Carousel from './Components/Carousel/Carousel';
 import News from './Components/newsandBlogs/News';
 import Reviews from './Components/StudentReviews/Reviews';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   return (
-    <div className="App">
+    <div id='top' className="App">
     <Navbar/>
     <Carousel/>
     <Section1/>
