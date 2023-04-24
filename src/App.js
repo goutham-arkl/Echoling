@@ -11,6 +11,7 @@ import Footer from './Components/Footer/Footer';
 import Carousel from './Components/Carousel/Carousel';
 import News from './Components/newsandBlogs/News';
 import Reviews from './Components/StudentReviews/Reviews';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   return (
