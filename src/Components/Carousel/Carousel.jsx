@@ -37,7 +37,7 @@ const Carousel = () => {
                 <div className='anime'>
                 <button className='video-btn'><FontAwesomeIcon icon={faPlay}/></button>
                 </div>
-            </div>
+                </div>
         </div>
         
         <button className='next' onClick={handleNext}><FontAwesomeIcon icon={faGreaterThan}/></button>

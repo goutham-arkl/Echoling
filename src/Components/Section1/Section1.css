@@ -1,6 +1,4 @@
 
-
-
 .container{
   display: flex;
   flex-direction: column;
@@ -69,6 +67,7 @@
     top: 90vh;
     right: 20px;
     background-color: #d2093c;
+    transition-duration: 1s;
     font-size: 25px;
 }
 
